@@ -36,7 +36,7 @@
 			sexe
 			<input type='radio' id='f' name='sexe' value='F'><label for='f'>F</label>
 			<input type='radio' id='m' name='sexe' value='M' checked><label for='m'>M</label>
-			<input type='radio' id='a' name='sexe' value='A'><label for='a'>Autre</label>
+			<input type='radio' id='a' name='sexe' value='A'><label for='a'>Autre/non mentioné</label>
 		</div>
 		<button type='submit'>Valider</button>
 	</form>

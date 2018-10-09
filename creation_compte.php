@@ -21,27 +21,38 @@
 	{
 		if(!(isset($_POST["nom"])) || $_POST["nom"] == '')
 		{
-			return (false);
+			header('location: inscription.php?error=nom');
+			exit();;
 		}
 		if(!(isset($_POST["prenom"])) || $_POST["prenom"] == '')
 		{
-			return (false);
+			header('location: inscription.php?error=prenom');
+			exit();;
 		}
 		if(!(isset($_POST["pseudo"])) || $_POST["pseudo"] == '')
 		{
-			return (false);
+			header('location: inscription.php?error=pseudo');
+			exit();;
 		}
 		if(!(isset($_POST["mdp"])) || $_POST["mdp"] == '')
 		{
-			return (false);
+			header('location: inscription.php?error=mdp');
+			exit();;
 		}
 		if(!(isset($_POST["ville"])) || $_POST["ville"] == '')
 		{
-			return (false);
+			header('location: inscription.php?error=1');
+			exit();;
 		}
 		if(!(isset($_POST["cp"])) || $_POST["cp"] == '')
 		{
-			return (false);
+			header('location: inscription.php?error=1');
+			exit();;
+		}
+		if(!(isset($_POST["telephone"])) || $_POST["telephone"] == 0
+		{
+			header('location: inscription.php?error=1');
+			exit();;
 		}
 		return (true);
 	}
@@ -50,8 +61,7 @@
 
 	if (!verif())
 	{
-		header('location: inscription.php?error=1');
-		exit();
+		
 	}
 
 
